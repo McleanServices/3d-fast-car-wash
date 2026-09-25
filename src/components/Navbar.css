@@ -1,0 +1,32 @@
+/* NavBar.css */
+
+.custom-size {
+    position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  }
+  
+  .nav-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-middle p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+
+  /* Hide elements on small screens */
+@media screen and (max-width: 500px) {
+    .custom-size,
+    .nav-middle {
+      display: none;
+    }
+  }
